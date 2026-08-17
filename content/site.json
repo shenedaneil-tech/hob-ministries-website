@@ -1,0 +1,24 @@
+{
+  "name": "House of Bread Ministries",
+  "tagline": "A Church in the Heart of the City, with the City in its Heart.",
+  "email": "houseofbreadworship@gmail.com",
+  "phoneDisplay": "+1 (914) 667-5524",
+  "phoneLink": "+19146675524",
+  "address1": "335 South 4th Avenue",
+  "cityStateZip": "Mount Vernon, New York 10550",
+  "country": "United States",
+  "nonprofit": "House of Bread Ministries is a 501(c)(3) nonprofit, registered in the US, registration number 26-2316333.",
+  "instagram": "https://www.instagram.com/houseofbreadministries",
+  "youtube": "https://youtube.com/@houseofbreadministries454",
+  "interactiveMode": "nucleus",
+  "launchers": {
+    "planVisit": "https://launcher.nucleus.church/launcher/45859054da56b8e28060?nlinfocard=infocard_c1d79dd525ec4980bb99b8fef6d781b6&nucleuslauncher=open",
+    "sayHello": "https://launcher.nucleus.church/flow/43bab2be082f0db782f6?nlflow=43bab2be082f0db782f6&nucleuslauncher=openflow",
+    "prayerHub": "https://launcher.nucleus.church/prayer/4433ab4fe7bc9ec98bc3?nlprayerhub=4433ab4fe7bc9ec98bc3&nucleuslauncher=openprayerhub",
+    "prayerRequest": "https://launcher.nucleus.church/flow/48838d3f26fe263f374a?nlflow=48838d3f26fe263f374a&nucleuslauncher=openflow",
+    "bibleStudy": "https://launcher.nucleus.church/launcher/45859054da56b8e28060?nlinfocard=infocard_c790b1cc22fa434782f0813822b1c946&nucleuslauncher=open",
+    "youthService": "https://launcher.nucleus.church/launcher/45859054da56b8e28060?nlinfocard=infocard_0bbf7a683a9f43358e87d4f44ed8fbd8&nucleuslauncher=open",
+    "zelleInfo": "https://launcher.nucleus.church/launcher/45859054da56b8e28060?nlinfocard=infocard_94944e21b50d40bc9920fa000c105318&nucleuslauncher=open",
+    "inPersonGiving": "https://launcher.nucleus.church/flow/49e1923afe0bb108e6ad?nlflow=49e1923afe0bb108e6ad&nucleuslauncher=openflow"
+  }
+}
