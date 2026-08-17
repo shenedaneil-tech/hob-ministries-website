@@ -1,0 +1,213 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://hobministries.com
+display_url: https://hobministries.com
+media_folder: assets/uploads
+public_folder: assets/uploads
+local_backend: true
+
+collections:
+  - name: site_settings
+    label: Church Info
+    format: json
+    files:
+      - label: Contact, Address & Social Links
+        name: site
+        file: content/site.json
+        fields:
+          - { label: Church Name, name: name, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Church Email, name: email, widget: string }
+          - { label: Phone as Visitors See It, name: phoneDisplay, widget: string }
+          - { label: Phone for Click-to-Call, name: phoneLink, widget: string }
+          - { label: Street Address, name: address1, widget: string }
+          - { label: City State & ZIP, name: cityStateZip, widget: string }
+          - { label: Country, name: country, widget: string }
+          - { label: Nonprofit Footer Text, name: nonprofit, widget: text }
+          - { label: Instagram Link, name: instagram, widget: string }
+          - { label: YouTube Link, name: youtube, widget: string }
+          - label: Button Mode
+            name: interactiveMode
+            widget: select
+            options:
+              - { label: Keep Current Nucleus Buttons, value: nucleus }
+              - { label: Use Built-in Website Forms, value: native }
+          - label: Advanced Button Connections
+            name: launchers
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Plan a Visit, name: planVisit, widget: string }
+              - { label: Say Hello, name: sayHello, widget: string }
+              - { label: Prayer Hub, name: prayerHub, widget: string }
+              - { label: Prayer Request, name: prayerRequest, widget: string }
+              - { label: Bible Study, name: bibleStudy, widget: string }
+              - { label: Youth Service, name: youthService, widget: string }
+              - { label: Zelle Info, name: zelleInfo, widget: string }
+              - { label: In-Person Giving, name: inPersonGiving, widget: string }
+
+  - name: home_page
+    label: Home Page
+    format: json
+    files:
+      - label: Home Page Content
+        name: home
+        file: content/home.json
+        fields:
+          - label: Top Banner
+            name: hero
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Main Heading, name: title, widget: string }
+              - { label: Welcome Text, name: text, widget: text }
+              - { label: Background Photo, name: image, widget: image, choose_url: true }
+          - label: HOB Online
+            name: online
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button Text, name: buttonText, widget: string }
+              - { label: Photo, name: image, widget: image, choose_url: true }
+          - label: Welcome Section
+            name: welcome
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: First Paragraph, name: text1, widget: text }
+              - { label: Second Paragraph, name: text2, widget: text }
+              - { label: Photo, name: image, widget: image, choose_url: true }
+          - label: Get Involved Section
+            name: nextStep
+            widget: object
+            fields:
+              - { label: Small Heading, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Photo, name: image, widget: image, choose_url: true }
+
+  - name: calendar_content
+    label: Schedule & Events
+    format: json
+    files:
+      - label: Weekly Services & Special Events
+        name: events
+        file: content/events.json
+        fields:
+          - label: Weekly Services
+            name: recurringEvents
+            widget: list
+            summary: '{{fields.title}} — {{fields.displayText}}'
+            fields:
+              - { label: Internal Key, name: key, widget: select, options: [sunday, bibleStudy, youthService] }
+              - { label: Service Name, name: title, widget: string }
+              - { label: Day of Week, name: weekday, widget: number, value_type: int, min: 0, max: 6 }
+              - { label: Start Time, name: start, widget: string }
+              - { label: End Time, name: end, widget: string, required: false }
+              - { label: Category, name: category, widget: string, required: false }
+              - { label: How the Time Is Written, name: displayText, widget: string }
+          - label: Special Events
+            name: events
+            widget: list
+            add_to_top: true
+            summary: '{{fields.date}} — {{fields.title}}'
+            fields:
+              - { label: Event Name, name: title, widget: string }
+              - { label: Date, name: date, widget: datetime, date_format: YYYY-MM-DD, time_format: false }
+              - { label: Start Time, name: start, widget: string }
+              - { label: End Time, name: end, widget: string, required: false }
+              - { label: Category, name: category, widget: string, required: false }
+              - { label: Short Description, name: description, widget: text, required: false }
+              - { label: Flyer / Event Image, name: image, widget: image, required: false, choose_url: true }
+              - { label: Registration Link, name: link, widget: string, required: false }
+
+  - name: team_content
+    label: Staff & Leaders
+    format: json
+    files:
+      - label: Leadership Team
+        name: team
+        file: content/team.json
+        fields:
+          - label: Pastors & Ministry Leaders
+            name: leaders
+            widget: list
+            summary: '{{fields.name}} — {{fields.role}}'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Ministry Role / Title, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image, required: false, choose_url: true }
+          - label: Support Staff
+            name: supportStaff
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - { label: Photo, name: photo, widget: image, required: false, choose_url: true }
+
+  - name: about_page
+    label: About Page
+    format: json
+    files:
+      - label: About, Mission, Values & Beliefs
+        name: about
+        file: content/about.json
+        fields:
+          - { label: Page Introduction, name: pageIntro, widget: text }
+          - { label: Our Story Heading, name: storyTitle, widget: string }
+          - { label: Our Story Paragraph 1, name: storyText1, widget: text }
+          - { label: Our Story Paragraph 2, name: storyText2, widget: text }
+          - { label: Our Story Photo, name: storyImage, widget: image, choose_url: true }
+          - { label: Mission Heading, name: missionTitle, widget: string }
+          - { label: Mission, name: missionText, widget: text }
+          - { label: Vision, name: visionText, widget: text }
+          - { label: Mission Photo, name: missionImage, widget: image, choose_url: true }
+          - label: Church Values
+            name: values
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Value Name, name: title, widget: string }
+              - { label: Description, name: text, widget: text }
+          - label: What We Believe
+            name: beliefs
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - { label: Belief Heading, name: title, widget: string }
+              - { label: Explanation, name: text, widget: text }
+              - { label: Scripture References, name: refs, widget: string, required: false }
+
+  - name: giving_page
+    label: Giving Page
+    format: json
+    files:
+      - label: Giving Information
+        name: giving
+        file: content/giving.json
+        fields:
+          - { label: Page Introduction, name: heroText, widget: text }
+          - { label: Why We Give Heading, name: whyTitle, widget: string }
+          - { label: Why We Give Paragraph 1, name: whyText1, widget: text }
+          - { label: Why We Give Paragraph 2, name: whyText2, widget: text }
+          - { label: Giving Page Photo, name: image, widget: image, choose_url: true }
+          - { label: Zelle Instructions, name: zelleText, widget: text }
+          - { label: In-Person Giving Instructions, name: inPersonText, widget: text }
+          - { label: Mail Giving Instructions, name: mailText, widget: text }
+
+  - name: contact_page
+    label: Contact Page
+    format: json
+    files:
+      - label: Contact Page
+        name: contact
+        file: content/contact.json
+        fields:
+          - { label: Page Introduction, name: pageText, widget: text }
+          - { label: Contact Page Photo, name: image, widget: image, choose_url: true }
