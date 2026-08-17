@@ -1,0 +1,21 @@
+{
+  "leaders": [
+    {"name":"Windell Lyne","role":"Founder · Lead Pastor · Board Chairman","photo":""},
+    {"name":"Jacqueline Lyne","role":"Evangelist · Director, Ladies Ministries · Board Member","photo":""},
+    {"name":"Jason Jacobs","role":"Director, Men's Ministry · Lead Usher","photo":""},
+    {"name":"Kassandra Davis","role":"Evangelist · Finance · Board Member","photo":""},
+    {"name":"Barbara Lyne","role":"Missions Director","photo":""},
+    {"name":"Andre Miller","role":"Minister","photo":""},
+    {"name":"Stacey Bell","role":"Legal Services · Media Team · Board Member","photo":""},
+    {"name":"Nicole Grossett","role":"Praise Team Leader","photo":""},
+    {"name":"Jeremie Grossett","role":"Minister of Music","photo":""},
+    {"name":"Angeline McIntosh","role":"Sunday School Director","photo":""},
+    {"name":"Kahleel Neil","role":"Youth Pastor","photo":""},
+    {"name":"Yvonne Lyne","role":"Evangelist · Prayer Coordinator · Board Member","photo":""}
+  ],
+  "supportStaff": [
+    {"name":"Meika Sterling","role":"Support Staff","photo":""},
+    {"name":"Latoya Edwards","role":"Support Staff","photo":""},
+    {"name":"Anita McCarthy","role":"Support Staff","photo":""}
+  ]
+}
