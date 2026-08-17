@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "eyebrow": "House of Bread Ministries",
+    "title": "Welcome home, where faith and family grow together.",
+    "text": "A church in the heart of the city, with the city in its heart. Join us as we worship Jesus, grow through His Word, and serve our community.",
+    "image": "https://cdn1.nucleus-cdn.church/church_2b85d7e7f16a4c278b441b160d35dade/file_714d6d1ce877473b921fc83a67322ec3/2026-01-15T02%3A53%3A15.184Z/Untitled_design-3.png"
+  },
+  "online": {
+    "eyebrow": "HOB Online",
+    "title": "Worship with us anywhere.",
+    "text": "Stream services from home or on the go and stay connected to the House of Bread family.",
+    "buttonText": "All Sermons",
+    "image": "https://cdn1.nucleus-cdn.church/church_2b85d7e7f16a4c278b441b160d35dade/file_cc206cbffa56429c820cd1f8a2864f3c/2026-01-15T03%3A21%3A24.876Z/welcome.png"
+  },
+  "welcome": {
+    "eyebrow": "Welcome",
+    "title": "A church family where faith can flourish.",
+    "text1": "House of Bread Ministries is dedicated to nurturing both the spirit and the community. We gather to worship, learn Scripture, experience God’s love, and serve together.",
+    "text2": "People of all ages and backgrounds are welcome as we pursue renewed hearts, transformed lives, and deeper faith in Jesus Christ.",
+    "image": "https://cdn1.nucleus-cdn.church/church_2b85d7e7f16a4c278b441b160d35dade/file_cda23b4751164867a066ee2fce14c806/2025-10-08T01%3A27%3A58.548Z/Nuke-Photoshoot-76.jpg"
+  },
+  "nextStep": {
+    "eyebrow": "Get involved",
+    "title": "Take your next step.",
+    "text": "Explore studies, prayer, youth ministry, events, and opportunities to serve and be spiritually nourished.",
+    "image": "https://cdn1.nucleus-cdn.church/church_2b85d7e7f16a4c278b441b160d35dade/file_21a0743bfefb4dd794047c47c4e9922f/2026-01-15T03%3A07%3A04.072Z/Modern_Aesthetic_Photo_Collage_Of_Memories_With_Friends_Instagram_Post.png"
+  }
+}
