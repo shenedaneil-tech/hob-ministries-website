@@ -416,3 +416,57 @@ h1, h2, h3, .section-title, .display-title { font-family: "Playfair Display", Ge
  .prayer-mark{display:none}.event-placeholder{min-height:300px}.pastor-duo article,.pastor-duo img{min-height:500px}
  .contact-visual img{height:280px}.placeholder-media.tall{min-height:400px}.section-heading-row{margin-bottom:36px}
 }
+
+
+/* ===== Shortened homepage ===== */
+.compact-home-hero{min-height:auto}
+.compact-home-hero .home-hero-layout{min-height:clamp(530px,68vh,720px);padding-top:70px;padding-bottom:150px}
+.compact-home-hero .home-hero-copy{max-width:790px}
+.compact-home-hero .home-hero-copy h1{font-size:clamp(3.8rem,7.6vw,7.7rem)}
+.home-visit-compact{padding-block:clamp(72px,8vw,110px)}
+.compact-visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(48px,7vw,95px);align-items:center}
+.compact-visit-photo{position:relative}
+.compact-visit-photo img{width:100%;height:clamp(390px,50vw,570px);object-fit:cover;border-radius:220px 220px 20px 20px}
+.compact-visit-photo>span{position:absolute;right:-18px;bottom:28px;padding:13px 18px;background:var(--gold);color:var(--navy-deep);font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.compact-visit-copy .display-title{font-size:clamp(2.8rem,5vw,5rem)}
+.compact-visit-copy>p:not(.eyebrow):not(.lead-paragraph){color:var(--muted);font-size:1.05rem}
+.compact-facts{display:grid;gap:0;margin:27px 0;border-top:1px solid var(--line)}
+.compact-facts span{display:flex;gap:15px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.compact-facts b{color:#9a762f}
+.home-feature-pair{padding:0 0 clamp(72px,8vw,110px)}
+.feature-pair-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+.pastor-welcome-card,.watch-card{min-height:560px}
+.pastor-welcome-card{display:grid;grid-template-columns:.82fr 1.18fr;background:var(--navy);color:#fff;overflow:hidden}
+.pastor-welcome-photo img{width:100%;height:100%;object-fit:cover}
+.pastor-welcome-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(32px,5vw,62px)}
+.pastor-welcome-copy h2,.watch-card h2{margin:0 0 18px;font-size:clamp(2.15rem,3.6vw,3.8rem);letter-spacing:-.035em}
+.pastor-welcome-copy>p:not(.eyebrow){color:rgba(255,255,255,.7)}
+.pastor-welcome-copy>strong{margin-top:14px}.pastor-welcome-copy>span{color:var(--gold-light);font-size:.8rem}
+.light-link{margin-top:25px;color:var(--gold-light)!important}
+.watch-card{position:relative;overflow:hidden;background:#07182d;color:#fff}
+.watch-card>img{width:100%;height:100%;object-fit:cover;opacity:.62}
+.watch-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,22,43,.05),rgba(6,22,43,.94))}
+.watch-card-overlay{position:absolute;z-index:1;right:0;bottom:0;left:0;padding:clamp(32px,5vw,58px)}
+.watch-card-overlay>p:not(.eyebrow){color:rgba(255,255,255,.72)}
+.watch-play{display:grid;place-items:center;width:60px;height:60px;margin-bottom:25px;border:1px solid var(--gold);border-radius:50%;color:var(--gold-light)}
+.compact-events{padding-block:clamp(70px,8vw,105px);background:var(--cream)}
+.compact-heading{align-items:end;margin-bottom:35px}
+.compact-heading>a{justify-self:end}
+.compact-event-list{border-top:1px solid rgba(9,33,63,.18)}
+.compact-event-list article{display:grid;grid-template-columns:75px 1fr auto;gap:24px;align-items:center;padding:20px 8px;border-bottom:1px solid rgba(9,33,63,.18)}
+.event-day{display:grid;place-items:center;width:58px;height:58px;border:1px solid var(--gold);border-radius:50%;color:#9a762f;font-size:.72rem;font-weight:700;letter-spacing:.12em}
+.compact-event-list small{color:#9a762f;font-size:.66rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.compact-event-list h3{display:inline;margin:0 18px 0 0;font-size:1.42rem}
+.compact-event-list p{display:inline;margin:0;color:var(--muted);font-size:.9rem}
+.compact-event-list article>a{font-size:1.5rem;color:var(--navy)}
+@media(max-width:980px){
+ .compact-visit-grid,.feature-pair-grid{grid-template-columns:1fr}
+ .compact-visit-photo{max-width:620px}.compact-visit-photo>span{right:0}
+ .pastor-welcome-card{grid-template-columns:.8fr 1.2fr}
+}
+@media(max-width:680px){
+ .compact-home-hero .home-hero-layout{min-height:560px;padding-bottom:210px}
+ .pastor-welcome-card{grid-template-columns:1fr}.pastor-welcome-card,.watch-card{min-height:auto}.pastor-welcome-photo img{height:380px}
+ .watch-card{min-height:500px}.compact-event-list article{grid-template-columns:62px 1fr auto;gap:12px;padding-block:16px}
+ .compact-event-list h3,.compact-event-list p{display:block}.compact-heading>a{justify-self:start}
+}
