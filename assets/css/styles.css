@@ -630,3 +630,12 @@ html,body{max-width:100%;overflow-x:hidden}
   .footer-cta-inner .actions{grid-template-columns:1fr}
   .compact-watch-grid .btn{width:100%;justify-content:center}
 }
+
+/* ===== Standalone transparent footer logo ===== */
+.footer-brand-block>a{display:inline-block}
+.footer-logo{display:block;width:190px;height:auto;max-height:190px;object-fit:contain;background:transparent}
+.footer-brand-block p{max-width:430px;margin-top:20px}
+@media(max-width:780px){
+  .footer-logo{width:155px;max-height:155px}
+  .footer-brand-block p{max-width:100%;font-size:.86rem;line-height:1.55}
+}
