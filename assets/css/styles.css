@@ -639,3 +639,28 @@ html,body{max-width:100%;overflow-x:hidden}
   .footer-logo{width:155px;max-height:155px}
   .footer-brand-block p{max-width:100%;font-size:.86rem;line-height:1.55}
 }
+
+
+/* ===== More compact homepage pastor feature ===== */
+.restored-pastor{padding:58px 0}
+.restored-pastor .pastor-layout{grid-template-columns:1fr 1fr;gap:clamp(38px,5vw,70px)}
+.restored-pastor .pastor-copy .display-title{max-width:620px;margin-bottom:18px;font-size:clamp(2.35rem,3.8vw,3.75rem)}
+.restored-pastor .pastor-copy>p:not(.eyebrow){max-width:620px;margin:0;font-size:.98rem;line-height:1.6}
+.restored-pastor .pastor-signature{margin:18px 0 22px}
+.restored-pastor .pastor-portrait-stack{min-height:490px}
+.restored-pastor .pastor-main{width:76%;height:455px}
+.restored-pastor .pastor-second{width:37%}
+.restored-pastor .pastor-second span{font-size:.82rem}
+@media(max-width:780px){
+ .restored-pastor{padding:48px 0}
+ .restored-pastor .pastor-layout{grid-template-columns:1fr;gap:28px}
+ .restored-pastor .pastor-copy .display-title{font-size:clamp(2.15rem,9.5vw,2.9rem)}
+ .restored-pastor .pastor-portrait-stack{max-width:520px;min-height:0}
+ .restored-pastor .pastor-main{width:100%;height:310px}
+ .restored-pastor .pastor-second{width:100%}
+}
+@media(max-width:430px){
+ .restored-pastor{padding:42px 0}
+ .restored-pastor .pastor-main{height:275px}
+ .restored-pastor .pastor-copy>p:not(.eyebrow){font-size:.92rem}
+}
