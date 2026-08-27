@@ -20,7 +20,7 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="House of Bread Ministries home">
-          <img class="header-logo" src="assets/images/hob-logo.png?v=transparent-2" alt="House of Bread Ministries">
+          <img class="header-logo" src="assets/images/hob-logo-transparent.png" alt="House of Bread Ministries">
         </a>
         <button class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
         <nav class="nav-links" aria-label="Primary">${links}<a class="nav-cta js-action" data-action="planVisit" href="#">Plan a Visit</a></nav>
@@ -38,7 +38,7 @@
     </section>
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="footer-brand-block"><a href="index.html" aria-label="${s.name} home"><img class="footer-logo" src="assets/images/hob-logo.png?v=transparent-2" alt="${s.name}"></a><p>${s.nonprofit}</p></div>
+        <div class="footer-brand-block"><a href="index.html" aria-label="${s.name} home"><img class="footer-logo" src="assets/images/hob-logo-transparent.png" alt="${s.name}"></a><p>${s.nonprofit}</p></div>
         <div><strong>Contact</strong><p><a href="mailto:${s.email}">${s.email}</a><br><a href="tel:${s.phoneLink}">${s.phoneDisplay}</a><br>${s.address1}<br>${s.cityStateZip}</p></div>
         <div><strong>Connect</strong><p><a class="js-action" data-action="prayerHub" href="#">Prayer</a><br><a class="js-action" data-action="planVisit" href="#">Plan a Visit</a><br><a href="${s.instagram}" target="_blank" rel="noopener">Instagram</a><br><a href="${s.youtube}" target="_blank" rel="noopener">YouTube</a></p></div>
       </div>
