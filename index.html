@@ -3,70 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="House of Bread Ministries in Mount Vernon, New York. Worship, grow in faith, and serve together.">
-  <title>House of Bread Ministries</title>
+  <meta name="description" content="Welcome to House of Bread Ministries in Mount Vernon, New York. Join us for worship, Bible study, youth ministry, and community.">
+  <meta name="theme-color" content="#09213f">
+  <title>House of Bread Ministries | Welcome Home</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body data-page="home">
 <div id="siteHeader"></div>
 <main id="main">
-  <section class="hero">
-    <img class="hero-media" data-img-key="homeHero" alt="House of Bread Ministries worship and community">
-    <div class="container hero-inner">
-      <p class="eyebrow" style="color:white" data-bind="home.hero.eyebrow">House of Bread Ministries</p>
-      <h1 data-bind="home.hero.title">Welcome home, where faith and family grow together.</h1>
-      <p data-bind="home.hero.text">A church in the heart of the city, with the city in its heart. Join us as we worship Jesus, grow through His Word, and serve our community.</p>
-      <div class="actions"><a class="btn btn-light js-action" data-action="planVisit" href="#">Plan a Visit</a><a class="btn btn-outline-light" href="next-steps.html">Get Involved</a></div>
+  <section class="home-hero">
+    <img class="home-hero-photo" src="assets/images/worship-hero.jpeg" alt="The House of Bread Ministries church family worshiping together">
+    <div class="home-hero-shade"></div>
+    <div class="container home-hero-layout">
+      <div class="home-hero-copy">
+        <p class="eyebrow eyebrow-light">Welcome to House of Bread Ministries</p>
+        <h1>A place to belong.<br>A faith to live.</h1>
+        <p class="hero-lede">A church in the heart of the city, with the city in its heart. Come experience passionate worship, biblical teaching, and a family ready to welcome you.</p>
+        <div class="actions">
+          <a class="btn btn-gold js-action" data-action="planVisit" href="#">Plan Your Visit</a>
+          <a class="btn btn-glass" data-bind-href="site.youtube" href="#" target="_blank" rel="noopener">Watch Online <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="service-ribbon">
+      <div class="container service-ribbon-grid">
+        <div class="service-ribbon-label"><span>Join us weekly</span><strong>There is room for you.</strong></div>
+        <div class="service-time"><span>Sunday Worship</span><strong>10:30 AM</strong></div>
+        <div class="service-time"><span>Bible Study</span><strong>Wed · 7:30 PM</strong></div>
+        <div class="service-time"><span>Youth Service</span><strong>Fri · 7:30 PM</strong></div>
+        <a class="service-location" href="contact-us.html"><span>335 South 4th Avenue</span><strong>Mount Vernon, NY <span aria-hidden="true">→</span></strong></a>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split">
-      <div class="content">
-        <p class="eyebrow" data-bind="home.online.eyebrow">HOB Online</p>
-        <h2 class="section-title" data-bind="home.online.title">Worship with us anywhere.</h2>
-        <p class="lede" data-bind="home.online.text">Stream services from home or on the go and stay connected to the House of Bread family.</p>
-        <div class="actions"><a class="btn btn-primary" data-bind-href="site.youtube" href="#" target="_blank" rel="noopener"><span data-bind="home.online.buttonText">All Sermons</span></a></div>
+  <section class="welcome-section section">
+    <div class="container welcome-grid">
+      <div class="welcome-heading">
+        <p class="eyebrow">You are welcome here</p>
+        <h2 class="display-title">Come as you are. Leave renewed.</h2>
       </div>
-      <img class="feature-image" data-img-key="welcome" alt="House of Bread Ministries">
+      <div class="welcome-copy">
+        <p class="lead-paragraph">Whether you are new to faith, returning to church, or looking for a place to grow, House of Bread is a family where you can encounter God and build meaningful relationships.</p>
+        <p>Our heart is to help every person find hope in Jesus, discover purpose, and experience the love of a genuine church community.</p>
+        <a class="text-link" href="about-us.html">Discover our story <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="container photo-story-grid">
+      <figure class="photo-story photo-story-main"><img src="assets/images/worship-community.jpeg" alt="Members of House of Bread Ministries worshiping"><figcaption>Faith that comes alive</figcaption></figure>
+      <figure class="photo-story photo-story-secondary"><img src="assets/images/worship-together.jpeg" alt="The church family gathered in worship"><figcaption>Family for every generation</figcaption></figure>
+      <blockquote class="scripture-card"><span class="scripture-mark">“</span><p>For where two or three are gathered together in my name, there am I in the midst of them.</p><cite>Matthew 18:20</cite></blockquote>
     </div>
   </section>
 
-  <section class="section" style="background:var(--surface)">
-    <div class="container split reverse">
-      <div class="content">
-        <p class="eyebrow" data-bind="home.welcome.eyebrow">Welcome</p>
-        <h2 class="section-title" data-bind="home.welcome.title">A church family where faith can flourish.</h2>
-        <p data-bind="home.welcome.text1">House of Bread Ministries is dedicated to nurturing both the spirit and the community.</p>
-        <p data-bind="home.welcome.text2">People of all ages and backgrounds are welcome.</p>
-        <div class="actions"><a class="btn btn-primary" href="about-us.html">About Us</a></div>
+  <section class="visit-section section">
+    <div class="container visit-grid">
+      <div class="visit-photo-wrap">
+        <img src="assets/images/church-building-wide.png" alt="The historic House of Bread Ministries church building in Mount Vernon">
+        <div class="visit-photo-note"><span>Our church home</span><strong>Mount Vernon, New York</strong></div>
       </div>
-      <img class="feature-image" data-img-key="about1" alt="Church family at House of Bread Ministries">
+      <div class="visit-content">
+        <p class="eyebrow">Your first Sunday</p>
+        <h2 class="display-title">Walking through our doors should feel like coming home.</h2>
+        <p class="section-copy">From the moment you arrive, our team is ready to help you feel comfortable. Expect heartfelt worship, a Bible-centered message, prayer, and people who are genuinely glad you came.</p>
+        <div class="visit-points">
+          <div><span class="point-number">01</span><p><strong>Come comfortably</strong><br>There is no dress code. Come as you are.</p></div>
+          <div><span class="point-number">02</span><p><strong>Bring the family</strong><br>Children, teens, adults, and seniors are all welcome.</p></div>
+          <div><span class="point-number">03</span><p><strong>Stay connected</strong><br>Meet our church family and learn about your next step.</p></div>
+        </div>
+        <div class="actions"><a class="btn btn-navy js-action" data-action="planVisit" href="#">Plan Your Visit</a><a class="text-link" href="contact-us.html">Get directions <span aria-hidden="true">→</span></a></div>
+      </div>
     </div>
   </section>
 
-  <section class="section band">
-    <div class="container split">
-      <div>
-        <p class="eyebrow" style="color:#e2c8b5" data-bind="home.nextStep.eyebrow">Get involved</p>
-        <h2 class="section-title" data-bind="home.nextStep.title">Take your next step.</h2>
-        <p class="lede" data-bind="home.nextStep.text">Explore studies, prayer, youth ministry, events, and opportunities to serve.</p>
-        <div class="actions"><a class="btn btn-light" href="next-steps.html">Take Your Next Step</a></div>
+  <section class="pastor-section section">
+    <div class="container pastor-layout">
+      <div class="pastor-copy">
+        <p class="eyebrow eyebrow-light">A welcome from our pastor</p>
+        <h2 class="display-title">“We believe God has a place and a purpose for you.”</h2>
+        <p>At House of Bread Ministries, you will find a caring family committed to worship, prayer, the Word of God, and serving our community. We would be honored to welcome you and walk alongside you in faith.</p>
+        <div class="pastor-signature"><strong>Pastor Windell Lyne</strong><span>Senior Pastor</span></div>
+        <a class="btn btn-outline-light" href="staff-leaders.html">Meet Our Leaders</a>
       </div>
-      <img class="feature-image" data-img-key="nextSteps" alt="House of Bread community">
+      <div class="pastor-portrait-stack">
+        <img class="pastor-main" src="assets/images/pastor-windell.jpeg" alt="Pastor Windell Lyne">
+        <div class="pastor-second"><img src="assets/images/evangelist-jacqueline.jpeg" alt="Evangelist Jacqueline Lyne"><span>Evangelist Jacqueline Lyne</span></div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Discover more</p><h2 class="section-title">Stay connected to church life.</h2>
-      <p class="lede">Explore upcoming events, ways to give, our leadership team, and how to reach us.</p>
-      <div class="cards">
-        <article class="card"><h3>Calendar</h3><p>See weekly services, ministry gatherings, outreach, and special events.</p><a class="card-link" href="calendar.html">Save the Date →</a></article>
-        <article class="card"><h3>Give</h3><p>Learn why we give and the ways you can support House of Bread Ministries.</p><a class="card-link" href="giving.html">Give Today →</a></article>
-        <article class="card"><h3>Leadership</h3><p>Meet the pastors, ministry leaders, and support staff who serve our church family.</p><a class="card-link" href="staff-leaders.html">Meet Our Team →</a></article>
-        <article class="card"><h3>Contact Us</h3><p>Find our email, phone number, service location, and ways to send us a message.</p><a class="card-link" href="contact-us.html">Reach Out →</a></article>
-      </div>
+  <section class="events-section section">
+    <div class="container section-heading-row">
+      <div><p class="eyebrow">Church life</p><h2 class="display-title">Gather. Grow. Serve.</h2></div>
+      <a class="text-link" href="calendar.html">View the full calendar <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="container event-grid" id="homeEventGrid">
+      <article class="event-card"><span class="event-day">SUN</span><div><p class="event-type">Worship</p><h3>Sunday Worship Service</h3><p>Sunday mornings at 10:30 a.m.</p></div><a href="calendar.html" aria-label="View Sunday Worship Service">→</a></article>
+      <article class="event-card"><span class="event-day">WED</span><div><p class="event-type">Study</p><h3>Wednesday Bible Study</h3><p>Wednesday nights at 7:30 p.m.</p></div><a href="calendar.html" aria-label="View Wednesday Bible Study">→</a></article>
+      <article class="event-card"><span class="event-day">FRI</span><div><p class="event-type">Youth</p><h3>Friday Youth Service</h3><p>Friday nights at 7:30 p.m.</p></div><a href="calendar.html" aria-label="View Friday Youth Service">→</a></article>
+    </div>
+  </section>
+
+  <section class="watch-section section">
+    <div class="container watch-grid">
+      <div class="watch-art"><img src="assets/images/worship-black-white.jpeg" alt="House of Bread Ministries congregation in worship"><a class="play-button" data-bind-href="site.youtube" href="#" target="_blank" rel="noopener" aria-label="Watch House of Bread Ministries online"><span>▶</span></a></div>
+      <div class="watch-copy"><p class="eyebrow">HOB Online</p><h2 class="display-title">Faith for wherever life finds you.</h2><p class="section-copy">Watch recent services, revisit a message, and worship with the House of Bread family wherever you are.</p><a class="btn btn-navy" data-bind-href="site.youtube" href="#" target="_blank" rel="noopener">Watch Recent Services</a></div>
+    </div>
+  </section>
+
+  <section class="next-steps-strip">
+    <div class="container next-steps-grid">
+      <div><p class="eyebrow eyebrow-light">Ready for your next step?</p><h2>There is more for you here.</h2></div>
+      <div class="next-step-links"><a href="next-steps.html">Join a ministry <span>→</span></a><a class="js-action" data-action="prayerHub" href="#">Request prayer <span>→</span></a><a href="giving.html">Give and support <span>→</span></a></div>
     </div>
   </section>
 </main>

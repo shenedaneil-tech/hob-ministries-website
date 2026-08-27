@@ -1,7 +1,7 @@
 {
   "leaders": [
-    {"name":"Windell Lyne","role":"Founder · Lead Pastor · Board Chairman","photo":""},
-    {"name":"Jacqueline Lyne","role":"Evangelist · Director, Ladies Ministries · Board Member","photo":""},
+    {"name":"Windell Lyne","role":"Founder · Lead Pastor · Board Chairman","photo":"assets/images/pastor-windell.jpeg"},
+    {"name":"Jacqueline Lyne","role":"Evangelist · Director, Ladies Ministries · Board Member","photo":"assets/images/evangelist-jacqueline.jpeg"},
     {"name":"Jason Jacobs","role":"Director, Men's Ministry · Lead Usher","photo":""},
     {"name":"Kassandra Davis","role":"Evangelist · Finance · Board Member","photo":""},
     {"name":"Barbara Lyne","role":"Missions Director","photo":""},
