@@ -20,8 +20,7 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="House of Bread Ministries home">
-          <span class="brand-logo-shell"><img class="brand-logo" src="assets/images/hob-logo.png" alt=""></span>
-          <span class="brand-copy"><strong>House of Bread</strong><small>Ministries · Mount Vernon, NY</small></span>
+          <img class="header-logo" src="assets/images/hob-logo.png" alt="House of Bread Ministries">
         </a>
         <button class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
         <nav class="nav-links" aria-label="Primary">${links}<a class="nav-cta js-action" data-action="planVisit" href="#">Plan a Visit</a></nav>
