@@ -495,3 +495,138 @@ h1, h2, h3, .section-title, .display-title { font-family: "Playfair Display", Ge
 .site-header .brand{min-width:0;width:auto;gap:0}
 .header-logo{display:block;width:78px;height:68px;object-fit:contain;background:transparent}
 @media(max-width:680px){.header-logo{width:66px;height:58px}}
+
+
+/* ===== Mobile-first layout repair ===== */
+html,body{max-width:100%;overflow-x:hidden}
+@media(max-width:780px){
+  .container{width:min(calc(100% - 32px),var(--max))}
+  .section{padding:58px 0}
+  .display-title,.section-title{font-size:clamp(2.35rem,11vw,3.5rem);line-height:1.08}
+  .lead-paragraph{font-size:1.25rem}
+  .site-header{min-height:72px}
+  .nav-wrap{min-height:72px}
+  .header-logo{width:62px;height:56px}
+  .nav-links{top:72px;max-height:calc(100vh - 72px);overflow-y:auto;padding:12px 20px 22px}
+  .nav-links a{padding:12px 4px;font-size:1rem}
+  .menu-btn{width:42px;height:42px}
+
+  .compact-home-hero{min-height:0}
+  .compact-home-hero .home-hero-layout{min-height:0;padding:78px 0 66px}
+  .compact-home-hero .home-hero-copy h1{max-width:100%;font-size:clamp(2.85rem,13.5vw,4.45rem);line-height:.98}
+  .hero-lede{font-size:1rem;line-height:1.55}
+  .service-ribbon{position:relative;right:auto;bottom:auto;left:auto}
+  .service-ribbon-grid{min-height:0;padding:0;grid-template-columns:1fr 1fr}
+  .service-ribbon-grid>*{min-height:72px;padding:10px 12px;border-top:1px solid rgba(255,255,255,.12)}
+  .service-ribbon-label{display:none}
+  .service-ribbon-grid>:nth-child(2){grid-column:1/-1;padding-left:12px;border-left:0}
+  .service-ribbon-grid>:nth-child(3){border-left:0}
+  .service-ribbon-grid>:nth-child(4){padding-left:12px;border-left:1px solid rgba(255,255,255,.14)}
+  .service-ribbon-grid>:nth-child(5){grid-column:1/-1;border-left:0}
+  .service-ribbon-grid span{font-size:.68rem}.service-ribbon-grid strong{font-size:.87rem}
+
+  .compact-visit-grid{gap:34px}
+  .compact-visit-photo img{height:320px;border-radius:120px 120px 16px 16px}
+  .compact-visit-photo>span{right:0;bottom:16px;max-width:88%;font-size:.61rem}
+  .compact-visit-copy .display-title{font-size:clamp(2.35rem,11vw,3.5rem)}
+  .compact-facts span{align-items:flex-start;font-size:.86rem}
+  
+  .pastor-layout{gap:38px}
+  .pastor-copy .display-title{font-size:clamp(2.35rem,10vw,3.3rem)}
+  .pastor-portrait-stack{width:100%;min-height:0;display:grid;grid-template-columns:1.15fr .85fr;gap:10px;align-items:end}
+  .pastor-main{width:100%;height:390px;border-radius:3px 24px 3px 24px}
+  .pastor-second{position:static;width:100%;padding:5px}
+  .pastor-second img{aspect-ratio:3/4}
+  .pastor-second span{padding:7px 5px 4px;font-size:.72rem;line-height:1.2}
+
+  .compact-heading{gap:16px;margin-bottom:25px}
+  .compact-event-list article{grid-template-columns:54px 1fr;gap:12px;padding:15px 0}
+  .compact-event-list article>a{display:none}
+  .compact-event-list h3{display:block;margin:1px 0 3px;font-size:1.15rem;line-height:1.2}
+  .compact-event-list p{display:block;font-size:.8rem;line-height:1.35}
+  .event-day{width:48px;height:48px}
+  .compact-watch-strip{padding:42px 0}
+  .compact-watch-grid h2{font-size:2.35rem;line-height:1.05}
+
+  .inner-hero{padding:66px 0}
+  .inner-hero:after{right:-45vw;bottom:-20vw;width:110vw;height:110vw}
+  .inner-hero-grid{gap:30px}
+  .inner-hero h1{font-size:clamp(2.75rem,13vw,4.2rem);line-height:1}
+  .inner-lede{margin-top:20px;font-size:1rem}
+  .hero-verse,.hero-service-card{padding:22px}
+  .hero-verse p{font-size:1.2rem}
+  .hero-service-card strong{font-size:2.4rem}
+  .step-path{margin-top:4px}
+
+  .editorial-split,.mission-grid,.beliefs-layout,.prayer-grid,.contact-modern{gap:38px}
+  .editorial-photo img{height:410px;border-radius:130px 130px 18px 18px}
+  .photo-tag{right:0;bottom:20px;max-width:90%;font-size:.62rem}
+  .heritage-note{align-items:flex-start;flex-direction:column;gap:3px}
+  .mission-vision{padding:24px 0 0 20px}
+  .mission-vision p{font-size:1.25rem!important}
+  .section-heading-row{display:grid;grid-template-columns:1fr;gap:15px;align-items:start}
+  .section-heading-row>p{font-size:.98rem}
+  .beliefs-intro{position:static}
+  .accordion-btn{padding:19px 3px;font-size:1.18rem}
+  .accordion-panel-inner{padding-right:5px}
+
+  .journey-grid,.give-option-grid,.pastor-duo{grid-template-columns:1fr}
+  .journey-card:last-child,.give-option.featured{grid-column:auto}
+  .placeholder-media.compact{min-height:210px}
+  .placeholder-media.tall{min-height:330px}
+  .weekly-list article{grid-template-columns:1fr;gap:3px;padding:20px 0}
+  .weekly-list article a{grid-column:auto;margin-top:7px}
+  .prayer-mark{display:none}
+
+  .event-feature-grid{grid-template-columns:1fr;min-height:0}
+  .event-placeholder{min-height:260px}
+  .event-callout{padding:34px 25px}
+  .event-callout h3{font-size:2rem}
+  .calendar-toolbar{align-items:flex-start;flex-direction:column;margin-top:0}
+  .calendar-actions{width:100%;display:grid;grid-template-columns:1fr 1fr 1fr}
+  .icon-btn{padding:9px 6px;font-size:.77rem}
+  .week-grid{width:100%;grid-template-columns:repeat(7,minmax(150px,1fr));border-radius:12px}
+  .day-column{min-height:290px}
+
+  .give-option-grid{gap:14px}
+  .give-option{min-height:0;padding:28px}
+  .give-option h3{font-size:1.7rem}
+  .giving-note{text-align:left}
+
+  .pastor-duo article,.pastor-duo img{min-height:460px}
+  .pastor-duo article>div{padding:75px 25px 25px}
+  .leader-grid{grid-template-columns:1fr;gap:16px}
+  .leader-photo,.leader-photo-img{aspect-ratio:4/3}
+
+  .contact-modern{grid-template-columns:1fr}
+  .contact-methods strong,.contact-methods a{overflow-wrap:anywhere}
+  .contact-visual img{height:260px}
+  .map-placeholder{padding:26px}
+
+  .footer-cta.section-sm{padding:30px 0}
+  .footer-cta-inner{grid-template-columns:1fr;gap:20px}
+  .footer-cta-inner h2{font-size:2rem;line-height:1.05}
+  .footer-cta-inner .actions{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:9px}
+  .footer-cta-inner .btn{width:100%;justify-content:center;padding:10px 8px;font-size:.8rem}
+  .site-footer{padding:46px 0 24px}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .site-footer .brand{align-items:flex-start}
+  .site-footer .brand-copy small{display:block;font-size:.66rem;line-height:1.35}
+  .footer-bottom{margin-top:28px;padding-top:18px;display:grid;gap:8px}
+
+  .modal{padding:10px}
+  .modal-card{padding:23px 18px;border-radius:14px}
+  .modal-head h2{font-size:1.8rem}
+  .form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+}
+@media(max-width:430px){
+  .container{width:min(calc(100% - 24px),var(--max))}
+  .actions{gap:9px}
+  .home-hero-copy .actions{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .home-hero-copy .btn{width:100%;justify-content:center;padding:11px 8px;font-size:.82rem}
+  .pastor-portrait-stack{grid-template-columns:1.35fr .65fr}
+  .pastor-main{height:350px}
+  .footer-cta-inner .actions{grid-template-columns:1fr}
+  .compact-watch-grid .btn{width:100%;justify-content:center}
+}
