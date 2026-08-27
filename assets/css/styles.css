@@ -795,3 +795,94 @@ html,body{max-width:100%;overflow-x:hidden}
  .value{border-right:0}
  .inner-hero:before{display:none}
 }
+
+
+/* ===== Photo-led flowing homepage ===== */
+.photo-flow-hero{min-height:760px}
+.photo-flow-hero .home-hero-layout{padding:120px 0 185px}
+.photo-flow-hero .home-hero-copy{max-width:900px}
+.photo-flow-hero .home-hero-copy h1{font-size:clamp(3.5rem,6.8vw,7rem)}
+.hero-service-line{position:absolute;right:0;bottom:0;left:0;z-index:3;border-top:1px solid rgba(255,255,255,.24);background:linear-gradient(90deg,rgba(6,22,43,.94),rgba(6,22,43,.72))}
+.hero-service-line-inner{min-height:112px;display:grid;grid-template-columns:.8fr 1.15fr 1fr 1.25fr;align-items:center}
+.hero-service-line-inner>*{min-height:54px;display:flex;flex-direction:column;justify-content:center;padding:0 24px;border-left:1px solid rgba(255,255,255,.18)}
+.hero-service-line-inner>*:first-child{padding-left:0;border-left:0}
+.hero-service-line span{color:var(--gold-light);font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.hero-service-line strong{color:#fff;font-size:.92rem}
+
+.welcome-photo-flow{position:relative;min-height:610px;overflow:hidden;background:#fff}
+.welcome-photo-flow>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.welcome-photo-gradient{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.02) 20%,rgba(255,255,255,.22) 44%,rgba(255,255,255,.98) 70%)}
+.welcome-flow-inner{position:relative;min-height:610px;display:flex;align-items:center;justify-content:flex-end}
+.welcome-flow-copy{width:min(48%,610px);padding:45px 0}
+.welcome-flow-copy h2{margin:0 0 22px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.8rem,5vw,5.2rem);line-height:1.02;letter-spacing:-.035em}
+.welcome-flow-lead{font-family:"Playfair Display",Georgia,serif;font-size:1.38rem;line-height:1.4}
+.welcome-flow-copy>p:not(.eyebrow){color:var(--muted)}
+
+.pastor-photo-flow{min-height:520px;display:grid;grid-template-columns:.9fr 1.1fr;background:var(--navy);color:#fff}
+.pastor-flow-photo{position:relative;min-height:520px;overflow:hidden}
+.pastor-flow-photo>img{width:100%;height:100%;position:absolute;object-fit:cover;object-position:center 18%}
+.pastor-flow-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,var(--navy))}
+.pastor-flow-secondary{position:absolute;z-index:2;right:22px;bottom:20px;width:150px;background:#fff;color:var(--navy);box-shadow:var(--shadow)}
+.pastor-flow-secondary img{width:100%;height:170px;object-fit:cover;object-position:center 15%}
+.pastor-flow-secondary span{display:block;padding:7px 8px;font-family:"Playfair Display",Georgia,serif;font-size:.72rem}
+.pastor-flow-copy{display:flex;align-items:center;padding:55px clamp(40px,7vw,105px) 55px clamp(30px,5vw,80px)}
+.pastor-flow-copy>div{max-width:670px}
+.pastor-flow-copy h2{margin:0 0 20px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.5rem,4vw,4.2rem);font-style:italic;line-height:1.05}
+.pastor-flow-copy>div>p:not(.eyebrow){color:rgba(255,255,255,.72)}
+.light-link{color:var(--gold-light)!important}
+
+.church-life-photo-flow{position:relative;min-height:550px;display:flex;align-items:center;overflow:hidden;color:#fff}
+.church-life-photo-flow>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.church-life-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,17,34,.93),rgba(4,17,34,.7) 55%,rgba(4,17,34,.2))}
+.church-life-content{position:relative;z-index:1;padding-block:70px}
+.church-life-heading{max-width:700px}
+.church-life-heading h2{margin:0 0 38px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.8rem,5vw,5.3rem);line-height:1.02}
+.church-life-times{max-width:880px;margin-bottom:34px;border-top:1px solid rgba(255,255,255,.28)}
+.church-life-times a{display:grid;grid-template-columns:.5fr 1fr .45fr;gap:25px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.28);align-items:center}
+.church-life-times span{color:var(--gold-light);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.church-life-times strong{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem}
+.church-life-times em{color:rgba(255,255,255,.72);font-style:normal;text-align:right}
+
+.online-photo-flow{position:relative;min-height:390px;display:flex;align-items:center;overflow:hidden;color:#fff;text-align:center}
+.online-photo-flow>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.online-photo-shade{position:absolute;inset:0;background:rgba(5,20,39,.78)}
+.online-flow-copy{position:relative;z-index:1}
+.online-flow-copy h2{margin:0 0 12px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.8rem,5vw,5rem)}
+.online-flow-copy p{max-width:680px;margin:0 auto 25px;color:rgba(255,255,255,.74)}
+
+@media(max-width:900px){
+ .hero-service-line-inner{grid-template-columns:1fr 1fr}
+ .hero-service-line-inner>*{padding:10px 16px;border-top:1px solid rgba(255,255,255,.12)}
+ .hero-service-line-inner>:nth-child(3){border-left:0}
+ .pastor-photo-flow{grid-template-columns:1fr}
+ .pastor-flow-photo{min-height:430px}
+ .pastor-flow-photo:after{background:linear-gradient(0deg,var(--navy),transparent 30%)}
+ .pastor-flow-copy{padding:40px 28px 52px}
+}
+@media(max-width:700px){
+ .photo-flow-hero{min-height:0}
+ .photo-flow-hero .home-hero-layout{padding:76px 0 66px;min-height:0}
+ .photo-flow-hero .home-hero-copy h1{font-size:clamp(2.85rem,13vw,4.35rem)}
+ .hero-service-line{position:relative}
+ .hero-service-line-inner{grid-template-columns:1fr}
+ .hero-service-line-inner>*{min-height:60px;padding:9px 2px;border-left:0;border-top:1px solid rgba(255,255,255,.15)}
+ .hero-service-line-inner>*:first-child{padding-left:2px}
+ .welcome-photo-flow{min-height:0;overflow:visible}
+ .welcome-photo-flow>img{position:relative;height:330px;object-position:35% center}
+ .welcome-photo-gradient{display:none}
+ .welcome-flow-inner{min-height:0;display:block}
+ .welcome-flow-copy{width:100%;padding:46px 0 54px}
+ .welcome-flow-copy h2{font-size:clamp(2.55rem,11vw,3.65rem)}
+ .pastor-flow-photo{min-height:350px}
+ .pastor-flow-secondary{right:12px;bottom:12px;width:105px}
+ .pastor-flow-secondary img{height:118px}
+ .pastor-flow-copy h2{font-size:clamp(2.35rem,10vw,3.25rem)}
+ .church-life-photo-flow{min-height:590px}
+ .church-life-content{padding-block:55px}
+ .church-life-heading h2{font-size:clamp(2.55rem,11vw,3.7rem)}
+ .church-life-times a{grid-template-columns:1fr auto;gap:4px 15px;padding:13px 0}
+ .church-life-times span{grid-column:1/-1}
+ .church-life-times strong{font-size:1.08rem}
+ .online-photo-flow{min-height:350px;text-align:left}
+ .online-flow-copy p{margin-left:0}
+}
