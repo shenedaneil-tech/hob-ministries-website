@@ -470,3 +470,23 @@ h1, h2, h3, .section-title, .display-title { font-family: "Playfair Display", Ge
  .watch-card{min-height:500px}.compact-event-list article{grid-template-columns:62px 1fr auto;gap:12px;padding-block:16px}
  .compact-event-list h3,.compact-event-list p{display:block}.compact-heading>a{justify-self:start}
 }
+
+
+/* ===== Copy-aligned homepage refinements ===== */
+.footer-cta.section-sm{padding:30px 0}
+.footer-cta-inner{gap:28px}
+.footer-cta-inner h2{margin:2px 0 6px;font-size:clamp(2rem,3.5vw,3.15rem)}
+.footer-cta-inner p{font-size:.96rem;line-height:1.45}
+.footer-cta-inner .actions{margin-top:0}
+.footer-cta-inner .btn{padding:10px 17px}
+.compact-home-hero .home-hero-copy h1{max-width:940px;font-size:clamp(3.5rem,6.7vw,6.9rem)}
+.restored-pastor{padding-block:clamp(72px,8vw,110px)}
+.compact-watch-strip{padding:52px 0;background:linear-gradient(110deg,var(--navy-deep),var(--navy-soft));color:#fff}
+.compact-watch-grid{display:grid;grid-template-columns:1fr auto;gap:45px;align-items:center}
+.compact-watch-grid h2{margin:0 0 8px;font-size:clamp(2.2rem,4vw,4rem)}
+.compact-watch-grid p:not(.eyebrow){max-width:720px;margin:0;color:rgba(255,255,255,.7)}
+@media(max-width:760px){
+ .footer-cta.section-sm{padding:26px 0}.footer-cta-inner{gap:18px}.footer-cta-inner h2{font-size:2rem}
+ .compact-watch-grid{grid-template-columns:1fr;gap:24px}
+ .compact-home-hero .home-hero-copy h1{font-size:clamp(3rem,13vw,4.8rem)}
+}
