@@ -1,31 +1,17 @@
 (function () {
-  const track = document.querySelector("[data-carousel]");
-  const previous = document.querySelector("[data-carousel-prev]");
-  const next = document.querySelector("[data-carousel-next]");
+  const panels = Array.from(document.querySelectorAll("[data-journey-panel]"));
+  if (!panels.length || !("IntersectionObserver" in window)) return;
 
-  if (!track) return;
-
-  function cardDistance() {
-    const card = track.querySelector(".explore-card");
-    if (!card) return 380;
-    const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 20;
-    return card.getBoundingClientRect().width + gap;
-  }
-
-  previous?.addEventListener("click", function () {
-    track.scrollBy({ left: -cardDistance(), behavior: "smooth" });
-  });
-
-  next?.addEventListener("click", function () {
-    track.scrollBy({ left: cardDistance(), behavior: "smooth" });
-  });
-
-  track.addEventListener("keydown", function (event) {
-    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
-    event.preventDefault();
-    track.scrollBy({
-      left: event.key === "ArrowRight" ? cardDistance() : -cardDistance(),
-      behavior: "smooth"
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      entry.target.classList.toggle("is-current", entry.isIntersecting);
     });
+  }, {
+    rootMargin: "-18% 0px -42% 0px",
+    threshold: 0.25
+  });
+
+  panels.forEach(function (panel) {
+    observer.observe(panel);
   });
 })();
