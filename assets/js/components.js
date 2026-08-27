@@ -23,7 +23,7 @@
           <img class="header-logo" src="assets/images/hob-logo-complete.png?v=complete-5" alt="House of Bread Ministries">
         </a>
         <button class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
-        <nav class="nav-links" aria-label="Primary">${links}<a class="nav-cta js-action" data-action="planVisit" href="#">Plan a Visit</a></nav>
+        <nav class="nav-links" aria-label="Primary">${links}<a class="nav-cta ${page === "visit" ? "active" : ""}" href="plan-your-visit.html">Plan a Visit</a></nav>
       </div>
     </header>`;
   }
@@ -33,14 +33,14 @@
     return `<section class="footer-cta section-sm">
       <div class="container footer-cta-inner">
         <div><p class="eyebrow" style="color:#e2c8b5">Join us this Sunday</p><h2>There’s a place for you here.</h2><p style="color:rgba(255,255,255,.78);margin:0">${sundayText} Come worship, grow, and connect with the House of Bread family.</p></div>
-        <div class="actions"><a class="btn btn-light js-action" data-action="planVisit" href="#">Plan a Visit</a><a class="btn btn-outline-light" href="next-steps.html">Take Your Next Step</a></div>
+        <div class="actions"><a class="btn btn-light" href="plan-your-visit.html">Plan a Visit</a><a class="btn btn-outline-light" href="next-steps.html">Take Your Next Step</a></div>
       </div>
     </section>
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand-block"><a href="index.html" aria-label="${s.name} home"><img class="footer-logo" src="assets/images/hob-logo-complete.png?v=complete-5" alt="${s.name}"></a><p>${s.nonprofit}</p></div>
         <div><strong>Contact</strong><p><a href="mailto:${s.email}">${s.email}</a><br><a href="tel:${s.phoneLink}">${s.phoneDisplay}</a><br>${s.address1}<br>${s.cityStateZip}</p></div>
-        <div><strong>Connect</strong><p><a class="js-action" data-action="prayerHub" href="#">Prayer</a><br><a class="js-action" data-action="planVisit" href="#">Plan a Visit</a><br><a href="${s.instagram}" target="_blank" rel="noopener">Instagram</a><br><a href="${s.youtube}" target="_blank" rel="noopener">YouTube</a></p></div>
+        <div><strong>Connect</strong><p><a class="js-action" data-action="prayerHub" href="#">Prayer</a><br><a href="plan-your-visit.html">Plan a Visit</a><br><a href="${s.instagram}" target="_blank" rel="noopener">Instagram</a><br><a href="${s.youtube}" target="_blank" rel="noopener">YouTube</a></p></div>
       </div>
       <div class="container footer-bottom"><small>© <span id="year"></span> ${s.name}. All Rights Reserved.</small><small>A welcoming church family in Mount Vernon, New York.</small></div>
     </footer>`;
@@ -111,6 +111,7 @@
 
   const nativeCopy = {
     planVisit: ["Plan a Visit", "Tell us when you plan to visit and how we can help make your first Sunday feel welcoming.", "Plan a Visit"],
+    planVisitForm: ["Let Us Know You’re Coming", "This is completely optional. Share your visit date and any questions so our church family can help you feel prepared.", "Plan a Visit"],
     sayHello: ["Say Hello", "Send a message to House of Bread Ministries.", "Say Hello"],
     prayerRequest: ["Prayer Request", "Share how our church family can pray with you.", "Prayer Request"],
     prayerHub: ["Prayer", "Send a prayer request to our ministry team.", "Prayer Request"],
@@ -127,6 +128,10 @@
   }
 
   function doAction(action) {
+    if (action === "planVisit") {
+      window.location.href = "plan-your-visit.html";
+      return;
+    }
     if (D.interactiveMode === "nucleus" && D.launchers?.[action]) {
       window.open(D.launchers[action], "_blank", "noopener,noreferrer");
     } else {
