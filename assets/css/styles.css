@@ -306,3 +306,113 @@ h1, h2, h3, .section-title, .display-title { font-family: "Playfair Display", Ge
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+
+/* ===== Full interior-page redesign ===== */
+.brand-logo-shell{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;overflow:hidden;border-radius:50%;background:#fff;border:2px solid rgba(198,161,91,.75);box-shadow:0 0 0 4px rgba(198,161,91,.1)}
+.brand-logo{width:100%;height:100%;object-fit:cover;transform:scale(1.22)}
+.footer-logo-shell{width:64px;height:64px;flex-basis:64px}
+.inner-hero{position:relative;overflow:hidden;padding:clamp(88px,10vw,150px) 0;background:linear-gradient(120deg,var(--navy-deep),#0d3157);color:#fff}
+.inner-hero:after{content:"";position:absolute;right:-12vw;bottom:-28vw;width:52vw;height:52vw;border:1px solid rgba(198,161,91,.28);border-radius:50%;box-shadow:0 0 0 7vw rgba(198,161,91,.035),0 0 0 14vw rgba(198,161,91,.025)}
+.inner-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.7fr);gap:clamp(48px,8vw,110px);align-items:end}
+.inner-hero h1{max-width:900px;margin:0;font-size:clamp(3.4rem,7.5vw,7.5rem);letter-spacing:-.045em}
+.inner-lede{max-width:720px;margin:28px 0 0;color:rgba(255,255,255,.72);font-size:clamp(1.05rem,1.6vw,1.3rem)}
+.hero-verse,.hero-service-card{padding:28px;border-top:1px solid var(--gold);background:rgba(255,255,255,.06);backdrop-filter:blur(12px)}
+.hero-verse>span,.hero-service-card>span{color:var(--gold-light);font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.hero-verse p{font-family:"Playfair Display",Georgia,serif;font-size:1.45rem;line-height:1.35}
+.hero-verse cite{color:rgba(255,255,255,.62);font-style:normal}
+.hero-service-card strong{display:block;margin:10px 0;font-family:"Playfair Display",Georgia,serif;font-size:3rem;color:#fff}
+.hero-service-card p{color:rgba(255,255,255,.7)}
+.hero-service-card a{color:var(--gold-light);font-weight:700}
+.editorial-split{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr);gap:clamp(55px,9vw,130px);align-items:center}
+.editorial-photo{position:relative}
+.editorial-photo img{width:100%;height:clamp(480px,60vw,700px);object-fit:cover;border-radius:220px 220px 24px 24px}
+.photo-tag{position:absolute;right:-24px;bottom:36px;padding:14px 20px;background:var(--gold);color:var(--navy-deep);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.editorial-copy>p:not(.eyebrow){font-size:1.08rem;color:var(--muted)}
+.heritage-note{display:flex;gap:18px;align-items:center;margin-top:35px;padding-top:24px;border-top:1px solid var(--line)}
+.heritage-note strong{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;color:var(--navy)}
+.heritage-note span{color:var(--muted)}
+.mission-panel{background:var(--navy);color:#fff}
+.mission-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(50px,9vw,130px);align-items:center}
+.mission-grid h2,.prayer-feature h2{margin:0 0 25px;font-size:clamp(2.8rem,5.8vw,5.8rem);letter-spacing:-.04em}
+.mission-grid>div>p:last-child,.prayer-feature p{max-width:680px;color:rgba(255,255,255,.72);font-size:1.12rem}
+.mission-vision{padding:35px;border-left:1px solid var(--gold)}
+.mission-vision span{color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.mission-vision p{font-family:"Playfair Display",Georgia,serif;font-size:1.55rem!important;line-height:1.45;color:#fff!important}
+.section-heading-row{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end;margin-bottom:55px}
+.section-heading-row>p{max-width:480px;margin:0 0 6px;color:var(--muted);font-size:1.08rem}
+.values-section{background:var(--cream)}
+.beliefs-section{background:#fff}
+.beliefs-layout{display:grid;grid-template-columns:.65fr 1.35fr;gap:clamp(55px,9vw,130px);align-items:start}
+.beliefs-intro{position:sticky;top:130px}
+.beliefs-intro>p{color:var(--muted)}
+.gold-rule{width:80px;height:2px;margin-top:30px;background:var(--gold)}
+.step-path{display:grid;gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.step-path span{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.72)}
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.journey-card{position:relative;padding:18px 18px 30px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow-soft)}
+.journey-num{position:absolute;top:28px;right:28px;z-index:2;padding:6px 9px;background:var(--gold);color:var(--navy);font-weight:700}
+.journey-card h3{margin:25px 8px 10px;font-size:1.8rem}
+.journey-card p,.journey-card a{margin-inline:8px}
+.placeholder-media{position:relative;min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px dashed rgba(198,161,91,.65);background:linear-gradient(145deg,#eef0ed,#f8f4ec);color:var(--navy)}
+.placeholder-media:before{content:"✦";display:grid;place-items:center;width:52px;height:52px;margin-bottom:15px;border:1px solid var(--gold);border-radius:50%;color:#9a762f}
+.placeholder-media span{font-family:"Playfair Display",Georgia,serif;font-size:1.4rem}
+.placeholder-media small{max-width:210px;margin-top:6px;color:var(--muted)}
+.placeholder-media.compact{min-height:240px}
+.placeholder-media.tall{min-height:560px}
+.weekly-section{background:var(--cream)}
+.weekly-list{margin-top:50px;border-top:1px solid rgba(9,33,63,.18)}
+.weekly-list article{display:grid;grid-template-columns:.45fr 1fr 1fr auto;gap:30px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(9,33,63,.18)}
+.weekly-list article>span{color:#9a762f;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.weekly-list h3{margin:0;font-size:1.55rem}.weekly-list p{margin:0;color:var(--muted)}.weekly-list a{font-weight:700;color:var(--navy)}
+.prayer-feature{background:linear-gradient(120deg,#08203d,#143b63);color:#fff}
+.prayer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}
+.prayer-mark{justify-self:end;color:rgba(255,255,255,.08);font-family:"Playfair Display",Georgia,serif;font-size:clamp(4.2rem,9vw,9rem);font-style:italic;line-height:.82}
+.events-intro{padding-bottom:70px}
+.event-feature-grid{display:grid;grid-template-columns:1.15fr .85fr;min-height:420px}
+.event-placeholder{min-height:420px}
+.event-callout{display:flex;flex-direction:column;justify-content:center;padding:clamp(35px,6vw,75px);background:var(--navy);color:#fff}
+.event-kicker{color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.event-callout h3{margin:15px 0;font-size:2.5rem}.event-callout p{color:rgba(255,255,255,.7)}.event-callout a{color:var(--gold-light)}
+.calendar-section{background:var(--cream)}
+.calendar-toolbar h2{margin:0;font-size:clamp(1.55rem,3vw,2.4rem)}
+.giving-story{grid-template-columns:1.05fr .75fr}
+.giving-options{background:var(--cream)}
+.give-option-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:22px}
+.give-option{min-height:360px;display:flex;flex-direction:column;align-items:flex-start;padding:38px;border:1px solid var(--line);background:#fff}
+.give-option.featured{background:var(--navy);color:#fff}.give-option.featured p{color:rgba(255,255,255,.72)}
+.give-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:auto;border:1px solid var(--gold);border-radius:50%;color:#a27c34;font-weight:700}
+.give-option h3{margin:25px 0 12px;font-size:2rem}.give-option p{color:var(--muted)}.give-option a{margin-top:auto}
+.giving-note{max-width:760px;margin:35px auto 0;text-align:center;color:var(--muted);font-size:.86rem}
+.pastor-duo{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.pastor-duo article{position:relative;min-height:650px;overflow:hidden;background:var(--navy)}
+.pastor-duo img{width:100%;height:100%;min-height:650px;object-fit:cover}
+.pastor-duo article>div{position:absolute;right:0;bottom:0;left:0;padding:90px 36px 32px;background:linear-gradient(transparent,rgba(6,22,43,.96));color:#fff}
+.pastor-duo span{color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.pastor-duo h3{margin:8px 0;font-size:2rem}.pastor-duo p{margin:0;color:rgba(255,255,255,.72)}
+.ministry-leaders{background:var(--navy);color:#fff}.ministry-leaders .section-heading-row>p{color:rgba(255,255,255,.68)}
+.ministry-leaders .leader-card{background:#fff;color:var(--ink)}
+.support-section{background:var(--cream)}
+.contact-modern{display:grid;grid-template-columns:1fr .9fr;gap:clamp(55px,8vw,110px)}
+.contact-methods{margin:40px 0;border-top:1px solid var(--line)}
+.contact-methods>a,.contact-methods>div{position:relative;display:block;padding:21px 36px 21px 0;border-bottom:1px solid var(--line)}
+.contact-methods span{display:block;color:#9a762f;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.contact-methods strong{font-size:1.05rem}.contact-methods b{position:absolute;right:0;top:30px}
+.contact-visual img{width:100%;height:370px;object-fit:cover}
+.map-placeholder{padding:34px;background:var(--navy);color:#fff}.map-placeholder span{color:var(--gold-light);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.map-placeholder a{color:var(--gold-light);font-weight:700}
+.not-found{min-height:78vh;display:grid;place-items:center;padding:90px 0;background:var(--navy);color:#fff;text-align:center}
+.not-found-inner{position:relative}.not-found img{width:120px;height:120px;margin:0 auto 25px;border-radius:50%;object-fit:cover}.not-found h1{max-width:800px;margin:0 auto;font-size:clamp(3rem,7vw,6rem)}.not-found p:not(.eyebrow){color:rgba(255,255,255,.7)}.not-found .actions{justify-content:center}.error-number{display:block;margin-top:45px;color:rgba(255,255,255,.1);font-family:"Playfair Display",Georgia,serif;font-size:8rem;line-height:.7}
+@media(max-width:980px){
+ .brand{min-width:0}.brand-copy small{display:none}.inner-hero-grid,.editorial-split,.mission-grid,.beliefs-layout,.prayer-grid,.contact-modern{grid-template-columns:1fr}
+ .hero-verse,.hero-service-card{max-width:520px}.section-heading-row{grid-template-columns:1fr;gap:20px}.beliefs-intro{position:static}
+ .journey-grid,.give-option-grid{grid-template-columns:1fr 1fr}.journey-card:last-child,.give-option.featured{grid-column:1/-1}
+ .weekly-list article{grid-template-columns:.35fr 1fr 1fr}.weekly-list article a{grid-column:2}.pastor-duo article,.pastor-duo img{min-height:540px}
+}
+@media(max-width:680px){
+ .container{width:min(calc(100% - 32px),var(--max))}.brand-logo-shell{width:46px;height:46px;flex-basis:46px}.brand-copy strong{font-size:.93rem}
+ .inner-hero{padding:76px 0 88px}.inner-hero h1{font-size:clamp(3rem,15vw,4.6rem)}
+ .photo-tag{right:0}.journey-grid,.give-option-grid,.event-feature-grid,.pastor-duo{grid-template-columns:1fr}.journey-card:last-child,.give-option.featured{grid-column:auto}
+ .weekly-list article{grid-template-columns:1fr;gap:5px}.weekly-list article a{grid-column:auto;margin-top:8px}
+ .prayer-mark{display:none}.event-placeholder{min-height:300px}.pastor-duo article,.pastor-duo img{min-height:500px}
+ .contact-visual img{height:280px}.placeholder-media.tall{min-height:400px}.section-heading-row{margin-bottom:36px}
+}

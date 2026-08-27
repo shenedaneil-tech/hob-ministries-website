@@ -20,7 +20,7 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="House of Bread Ministries home">
-          <span class="brand-mark">HOB</span>
+          <span class="brand-logo-shell"><img class="brand-logo" src="assets/images/hob-logo.png" alt=""></span>
           <span class="brand-copy"><strong>House of Bread</strong><small>Ministries · Mount Vernon, NY</small></span>
         </a>
         <button class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
@@ -39,11 +39,11 @@
     </section>
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div><div class="brand"><span class="brand-mark" style="border-color:white">HOB</span><span class="brand-copy"><strong>${s.name}</strong><small>${s.tagline}</small></span></div><p>${s.nonprofit}</p></div>
+        <div><div class="brand"><span class="brand-logo-shell footer-logo-shell"><img class="brand-logo" src="assets/images/hob-logo.png" alt=""></span><span class="brand-copy"><strong>${s.name}</strong><small>${s.tagline}</small></span></div><p>${s.nonprofit}</p></div>
         <div><strong>Contact</strong><p><a href="mailto:${s.email}">${s.email}</a><br><a href="tel:${s.phoneLink}">${s.phoneDisplay}</a><br>${s.address1}<br>${s.cityStateZip}</p></div>
         <div><strong>Connect</strong><p><a class="js-action" data-action="prayerHub" href="#">Prayer</a><br><a class="js-action" data-action="planVisit" href="#">Plan a Visit</a><br><a href="${s.instagram}" target="_blank" rel="noopener">Instagram</a><br><a href="${s.youtube}" target="_blank" rel="noopener">YouTube</a></p></div>
       </div>
-      <div class="container footer-bottom"><small>© <span id="year"></span> ${s.name}. All Rights Reserved.</small><small>Rebuilt for independent church management.</small></div>
+      <div class="container footer-bottom"><small>© <span id="year"></span> ${s.name}. All Rights Reserved.</small><small>A welcoming church family in Mount Vernon, New York.</small></div>
     </footer>`;
   }
 
