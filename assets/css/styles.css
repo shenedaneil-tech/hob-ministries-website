@@ -696,3 +696,102 @@ html,body{max-width:100%;overflow-x:hidden}
  .weekly-service-card>a{grid-column:3;grid-row:1/3;margin:0;padding:0;border:0;font-size:0}
  .weekly-service-card>a span{font-size:1.35rem}
 }
+
+
+/* ===== Editorial open-layout direction ===== */
+:root{--radius:6px;--shadow:0 22px 65px rgba(6,22,43,.11);--shadow-soft:0 10px 30px rgba(6,22,43,.055)}
+.section{position:relative}
+.btn,.nav-cta,.icon-btn{border-radius:999px}
+.section-heading-row,.connected-heading{padding-top:18px;border-top:1px solid rgba(198,161,91,.6)}
+.section-heading-row:before,.connected-heading:before{content:"";position:absolute}
+.compact-visit-photo img,.editorial-photo img,.contact-visual img,.feature-image{border-radius:2px;box-shadow:none}
+.compact-visit-photo{padding:0 18px 18px 0}
+.compact-visit-photo:after{content:"";position:absolute;right:0;bottom:0;width:72%;height:72%;z-index:-1;background:var(--gold)}
+.compact-visit-photo>span,.photo-tag{right:18px;bottom:18px;border-radius:0}
+.compact-facts{border-top:1px solid rgba(9,33,63,.2)}
+.compact-facts span{padding:13px 0}
+
+.restored-pastor{padding-block:54px}
+.restored-pastor .pastor-layout{grid-template-columns:1.05fr .95fr}
+.restored-pastor .pastor-main{border-radius:0;box-shadow:none}
+.restored-pastor .pastor-second{padding:7px;border-left:3px solid var(--gold);box-shadow:0 20px 55px rgba(0,0,0,.2)}
+.restored-pastor:before{content:"PASTOR'S WELCOME";position:absolute;left:-28px;bottom:55px;color:rgba(255,255,255,.045);font-family:"Playfair Display",Georgia,serif;font-size:clamp(4rem,10vw,9rem);letter-spacing:.03em;white-space:nowrap}
+
+.connected-section{padding:72px 0;background:var(--cream)}
+.connected-heading{grid-template-columns:1.1fr .9fr;margin-bottom:42px}
+.service-card-grid{gap:0;border-top:1px solid rgba(9,33,63,.2);border-bottom:1px solid rgba(9,33,63,.2)}
+.weekly-service-card{min-height:235px;padding:30px 34px;border:0;border-left:1px solid rgba(9,33,63,.16);background:transparent;box-shadow:none}
+.weekly-service-card:first-child{border-left:0}
+.weekly-service-card:before{display:none}
+.weekly-service-top{align-items:flex-start}
+.service-day-badge{width:auto;height:auto;display:block;border-radius:0;background:transparent;color:#9a762f;font-family:"Playfair Display",Georgia,serif;font-size:2rem;font-weight:600;letter-spacing:0}
+.weekly-service-card h3{font-size:1.7rem}
+.weekly-service-card>a{border-top:0;padding-top:24px;color:#9a762f}
+.compact-watch-strip{padding:48px 0;border-top:1px solid rgba(198,161,91,.42);background:var(--navy-deep)}
+.compact-watch-grid{grid-template-columns:1fr auto}
+
+.inner-hero{border-bottom:4px solid var(--gold)}
+.inner-hero:before{content:"";position:absolute;top:0;right:16%;width:1px;height:100%;background:rgba(198,161,91,.22)}
+.hero-verse,.hero-service-card{border:0;border-left:1px solid var(--gold);background:transparent;backdrop-filter:none}
+.editorial-photo img{border-radius:0}
+.heritage-note{border-top:1px solid rgba(9,33,63,.2)}
+.mission-panel,.prayer-feature,.ministry-leaders{background:var(--navy)}
+.mission-grid,.prayer-grid{padding-block:12px}
+.mission-vision{border-left:1px solid var(--gold)}
+
+.journey-grid{gap:40px}
+.journey-card{padding:20px 0 34px;border:0;border-top:2px solid var(--gold);background:transparent;box-shadow:none}
+.journey-card .placeholder-media{margin-inline:0}
+.journey-card h3,.journey-card p,.journey-card a{margin-inline:0}
+.journey-num{top:30px;right:10px;border-radius:0}
+.placeholder-media{border:0;border-radius:0;background:linear-gradient(145deg,#e9ece8,#f8f4ec);box-shadow:none}
+.weekly-list{border-top:1px solid rgba(9,33,63,.2)}
+.weekly-list article{border-bottom:1px solid rgba(9,33,63,.2);background:transparent}
+.event-feature-grid{box-shadow:none}
+.event-callout{border-radius:0}
+.week-grid{border-radius:0;box-shadow:none}
+.day-column{background:#fff}
+.event-pill{border-radius:2px}
+
+.give-option-grid{gap:0;border-top:1px solid rgba(9,33,63,.2);border-bottom:1px solid rgba(9,33,63,.2)}
+.give-option{min-height:350px;padding:34px;border:0;border-left:1px solid rgba(9,33,63,.16);background:transparent}
+.give-option:first-child{border-left:0}
+.give-option.featured{background:var(--navy)}
+.give-icon{border-radius:0;border:0;border-bottom:2px solid var(--gold)}
+
+.value-grid{gap:0;border-top:1px solid rgba(9,33,63,.18)}
+.value{padding:30px 26px;border:0;border-right:1px solid rgba(9,33,63,.13);border-bottom:1px solid rgba(9,33,63,.13);background:transparent}
+.value:nth-child(3n){border-right:0}
+.leader-grid{gap:36px}
+.leader-card{border:0;border-radius:0;background:transparent;box-shadow:none}
+.leader-photo,.leader-photo-img{border-radius:0;aspect-ratio:4/3}
+.leader-body{padding:19px 0;border-top:2px solid var(--gold)}
+.pastor-duo article{border-radius:0;box-shadow:none}
+
+.contact-methods{border-top:1px solid rgba(9,33,63,.2)}
+.contact-methods>a,.contact-methods>div{border-bottom:1px solid rgba(9,33,63,.2)}
+.map-placeholder{border-radius:0}
+.accordion-btn{transition:padding .2s ease,background .2s ease}
+.accordion-btn:hover{padding-inline:14px;background:var(--cream)}
+.footer-cta{border-top:1px solid rgba(9,33,63,.25)}
+
+@media(max-width:780px){
+ .section-heading-row,.connected-heading{padding-top:14px}
+ .compact-visit-photo{padding:0 10px 10px 0}
+ .compact-visit-photo>span{right:10px;bottom:10px}
+ .restored-pastor:before{display:none}
+ .restored-pastor .pastor-layout{grid-template-columns:1fr}
+ .connected-section{padding:54px 0}
+ .connected-heading{grid-template-columns:1fr;margin-bottom:26px}
+ .service-card-grid{grid-template-columns:1fr;border-bottom:0}
+ .weekly-service-card{min-height:0;padding:20px 6px;border-left:0;border-bottom:1px solid rgba(9,33,63,.18)}
+ .weekly-service-card{display:grid;grid-template-columns:64px 1fr auto}
+ .service-day-badge{font-size:1.45rem}
+ .weekly-service-card>a{padding-top:0}
+ .journey-grid{gap:26px}
+ .give-option-grid{grid-template-columns:1fr;border-bottom:0}
+ .give-option{min-height:0;padding:27px 5px;border-left:0;border-bottom:1px solid rgba(9,33,63,.18)}
+ .give-option.featured{padding:27px 24px}
+ .value{border-right:0}
+ .inner-hero:before{display:none}
+}
