@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - modern-redesign
   workflow_dispatch:
 
 permissions:
@@ -23,10 +22,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check out modern website
+      - name: Check out website
         uses: actions/checkout@v4
-        with:
-          ref: modern-redesign
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
