@@ -1333,3 +1333,181 @@ html,body{max-width:100%;overflow-x:hidden}
  .visit-ready-grid{grid-template-columns:1fr;gap:38px}
  .visit-ready h2{font-size:clamp(3rem,14vw,4.3rem)}
 }
+
+/* ===== Mobile-native site pass ===== */
+@media(max-width:780px){
+  html{scroll-padding-top:68px}
+  body{overflow-x:hidden}
+  body.menu-open{overflow:hidden}
+  .container{width:min(calc(100% - 32px),var(--max))}
+  .section{padding:52px 0}
+  .eyebrow{font-size:.65rem;letter-spacing:.15em}
+  .display-title,.section-title{font-size:clamp(2.3rem,10vw,3.25rem);line-height:1.02}
+  .lead-paragraph{font-size:1.12rem;line-height:1.55}
+  .actions{align-items:stretch}
+  .btn{min-height:46px;justify-content:center}
+
+  /* A simple, touch-friendly mobile header. */
+  .site-header,.nav-wrap{min-height:68px}
+  .header-logo{width:56px;height:52px}
+  .menu-btn{width:42px;height:42px;border-radius:12px;font-size:0}
+  .menu-btn::before{content:"Menu";font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .menu-btn[aria-expanded="true"]::before{content:"Close"}
+  .nav-links{position:fixed;top:68px;right:0;bottom:0;left:0;max-height:none;padding:18px 24px 32px;overflow-y:auto;background:rgba(5,20,39,.99)}
+  .nav-links a{min-height:48px;padding:13px 2px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.1);font-family:"Playfair Display",Georgia,serif;font-size:1.2rem}
+  .nav-links a.active{color:var(--gold-light)}
+  .nav-links .nav-cta{justify-content:center;margin-top:16px;border:1px solid var(--gold);border-radius:999px;font-family:"DM Sans",sans-serif;font-size:.9rem}
+
+  /* Homepage: scale the opening view for a phone instead of shrinking desktop. */
+  .signature-hero-inner{padding:64px 0 48px}
+  .signature-hero-copy{max-width:100%}
+  .signature-hero h1{max-width:420px;margin-bottom:18px;font-size:clamp(3.45rem,16vw,4.65rem);line-height:.86}
+  .signature-hero-copy>p:not(.eyebrow){max-width:34rem;font-size:.98rem;line-height:1.55}
+  .signature-hero-copy .actions{gap:18px;margin-top:24px}
+  .signature-service-inner{grid-template-columns:1fr 1fr}
+  .signature-service-inner>*{min-height:72px;padding:12px 0;border-top:0;border-left:1px solid rgba(255,255,255,.15)}
+  .signature-service-inner>*:first-child{padding-right:14px;border-left:0}
+  .signature-service-inner>*:nth-child(2){padding-left:14px}
+  .signature-service-inner>*:last-child{grid-column:1/-1;min-height:66px;border-top:1px solid rgba(255,255,255,.15);border-left:0}
+  .signature-service-inner span{font-size:.61rem}
+  .signature-service-inner strong{font-size:.84rem}
+
+  .signature-intro{padding:52px 0 58px}
+  .signature-intro-grid{gap:24px}
+  .signature-intro h2{font-size:clamp(3rem,14vw,4rem);line-height:.9}
+  .signature-intro-copy .lead-paragraph{font-size:1.25rem}
+  .signature-gallery{margin-top:34px;grid-template-columns:1fr;grid-template-rows:260px 205px;gap:12px}
+  .signature-gallery-main{grid-row:auto;border-radius:2px 22px 2px 22px}
+  .signature-gallery-side{display:none}
+  .signature-verse{min-height:205px;padding:24px;border-radius:2px 18px 2px 18px}
+  .signature-verse blockquote{font-size:1.23rem;line-height:1.38}
+
+  .journey-section{padding:54px 0 58px}
+  .journey-heading{margin-bottom:28px}
+  .journey-heading h2{max-width:480px;font-size:clamp(2.65rem,12vw,3.55rem);line-height:.98}
+  .journey-heading>p:last-child{font-size:.92rem}
+  .journey-stack{display:grid;gap:18px}
+  .journey-panel,.journey-panel:nth-child(2),.journey-panel:nth-child(3){position:relative;top:auto!important;transform:none!important;min-height:0;margin:0;grid-template-columns:1fr;border-radius:10px;box-shadow:0 14px 38px rgba(5,20,39,.1)}
+  .journey-copy,.journey-panel-connect .journey-copy,.journey-panel-watch .journey-copy{min-height:0;padding:28px 22px 30px}
+  .journey-count{margin:0 0 34px}
+  .journey-panel h3{margin-bottom:13px;font-size:clamp(2.15rem,10vw,2.9rem);line-height:.98}
+  .journey-panel p{font-size:.94rem;line-height:1.55}
+  .journey-action{margin-top:24px}
+  .journey-media{height:205px;grid-row:1}
+  .journey-schedule{padding:0 22px 22px}
+  .journey-schedule p{grid-template-columns:1fr auto;padding:13px 0}
+  .journey-schedule span{grid-column:1/-1}
+  .journey-panel-watch{min-height:390px}
+  .journey-panel-watch .journey-copy{min-height:390px;justify-content:flex-end}
+  .journey-panel-watch .journey-count{margin-bottom:auto}
+  .journey-watch-shade{background:linear-gradient(0deg,rgba(5,20,39,.96),rgba(5,20,39,.56))}
+
+  .signature-pastor{padding:52px 0}
+  .signature-pastor-grid{grid-template-columns:112px 1fr;gap:24px;align-items:start}
+  .signature-pastor-image{width:112px}
+  .signature-pastor-image img{height:150px;border-radius:2px 16px 2px 16px}
+  .signature-pastor-image p{position:static;margin-top:8px;padding:8px 9px}
+  .signature-pastor-image strong{font-size:.58rem}
+  .signature-pastor-image span{font-size:.57rem}
+  .signature-pastor-copy h2{margin-bottom:15px;font-size:clamp(2rem,8.7vw,2.75rem);line-height:1.02}
+  .signature-pastor-copy>p:not(.eyebrow){font-size:.91rem;line-height:1.55}
+
+  /* Plan Your Visit: shorter, clearer sections and an image that stays in frame. */
+  .visit-welcome{padding:48px 0 54px}
+  .visit-welcome-grid{grid-template-columns:1fr;gap:32px}
+  .visit-welcome-copy h1{margin-bottom:20px;font-size:clamp(3rem,13vw,4rem);line-height:.94}
+  .visit-welcome-copy>p:not(.eyebrow){font-size:1rem}
+  .visit-welcome-image{width:100%;padding:0 0 14px 14px}
+  .visit-welcome-image img{height:330px;border-radius:2px 22px 2px 22px;object-position:center 42%}
+  .visit-welcome-image p{right:0;bottom:14px;max-width:88%;padding:12px 14px}
+  .visit-welcome-image strong{font-size:.96rem}
+  .visit-facts-grid{grid-template-columns:1fr 1fr}
+  .visit-facts-grid>div,.visit-facts-grid>div:first-child{min-height:84px;padding:14px 8px;border-top:0;border-left:1px solid rgba(255,255,255,.14)}
+  .visit-facts-grid>div:first-child{padding-left:0;border-left:0}
+  .visit-facts-grid>div:nth-child(3){grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);border-left:0}
+  .visit-facts-grid>div>span{flex:0 0 32px;width:32px;height:32px}
+  .visit-facts-grid strong{font-size:.84rem}
+  .visit-expect{padding:54px 0}
+  .visit-expect-grid{gap:34px}
+  .visit-expect-heading h2{font-size:clamp(2.55rem,11vw,3.35rem);line-height:1}
+  .visit-steps article{padding:22px 0;grid-template-columns:34px 1fr;gap:12px}
+  .visit-steps h3{font-size:1.5rem}
+  .visit-heart{min-height:350px}
+  .visit-heart>img{object-position:60% center}
+  .visit-heart-copy blockquote{font-size:clamp(1.95rem,8.5vw,2.6rem);line-height:1.08}
+  .visit-questions{padding:54px 0}
+  .visit-questions-grid{gap:30px}
+  .visit-questions h2{font-size:clamp(2.55rem,11vw,3.35rem);line-height:1}
+  .visit-accordion summary{min-height:60px;padding:17px 0;font-size:1.16rem;line-height:1.25}
+  .visit-accordion details p{margin:0 24px 20px 0;font-size:.94rem}
+  .visit-ready{padding:52px 0}
+  .visit-ready-grid{grid-template-columns:1fr;gap:30px}
+  .visit-ready h2{font-size:clamp(2.65rem,11.5vw,3.55rem);line-height:.98}
+
+  /* Interior pages use the same compact rhythm. */
+  .inner-hero{padding:50px 0 54px}
+  .inner-hero-grid{grid-template-columns:1fr;gap:28px}
+  .inner-hero h1{font-size:clamp(2.7rem,12vw,3.8rem);line-height:.98}
+  .inner-lede{font-size:.98rem;line-height:1.55}
+  .hero-verse,.hero-service-card{padding:18px 0 0 18px}
+  .hero-verse p{font-size:1.1rem}
+  .hero-service-card strong{font-size:2.2rem}
+  .step-path{gap:0}
+  .step-path span{padding:10px 0}
+  .section-heading-row{gap:12px;margin-bottom:28px}
+  .editorial-split,.mission-grid,.beliefs-layout,.prayer-grid,.contact-modern{grid-template-columns:1fr;gap:32px}
+  .editorial-photo img{height:330px;border-radius:0;object-position:center}
+  .mission-vision{padding:20px 0 0 18px}
+  .journey-grid{grid-template-columns:1fr;gap:22px}
+  .journey-card{padding:16px 0 26px}
+  .placeholder-media.compact{min-height:190px}
+  .placeholder-media.tall{min-height:280px}
+  .weekly-list{margin-top:30px}
+  .weekly-list article{grid-template-columns:1fr;gap:4px;padding:18px 0}
+  .weekly-list article a{margin-top:6px}
+  .prayer-feature .actions{display:grid;grid-template-columns:1fr 1fr}
+  .event-placeholder{min-height:220px}
+  .event-callout{padding:28px 22px}
+  .event-callout h3{font-size:1.85rem}
+  .calendar-section .container{overflow-x:hidden}
+  .calendar-toolbar{gap:16px}
+  .calendar-actions{position:sticky;left:0;width:100%}
+  .week-grid{width:100%;grid-template-columns:repeat(7,minmax(132px,1fr));overflow-x:auto;scroll-snap-type:x proximity}
+  .day-column{min-height:250px;scroll-snap-align:start}
+  .give-option-grid{grid-template-columns:1fr;gap:0}
+  .give-option{min-height:0;padding:25px 4px}
+  .give-option.featured{padding:28px 22px}
+  .pastor-duo{grid-template-columns:1fr;gap:16px}
+  .pastor-duo article,.pastor-duo img{min-height:430px}
+  .pastor-duo article>div{padding:68px 22px 22px}
+  .leader-grid,.value-grid{grid-template-columns:1fr;gap:16px}
+  .leader-photo,.leader-photo-img{aspect-ratio:4/3}
+  .contact-visual img{height:230px}
+  .map-placeholder{padding:22px}
+
+  .footer-cta-inner .actions{grid-template-columns:1fr}
+  .footer-logo{width:125px;max-height:125px}
+  .site-footer{padding:42px 0 22px}
+  .footer-grid{gap:24px}
+  .modal{align-items:end;padding:0}
+  .modal.open{place-items:end stretch}
+  .modal-card{width:100%;max-height:92vh;overflow-y:auto;padding:24px 18px 28px;border-radius:18px 18px 0 0}
+}
+
+@media(max-width:430px){
+  .container{width:min(calc(100% - 24px),var(--max))}
+  .signature-hero-inner{padding:54px 0 42px}
+  .signature-hero h1{font-size:clamp(3.2rem,16vw,4rem)}
+  .signature-hero-copy .actions,.visit-welcome-copy .actions,.prayer-feature .actions{display:grid;grid-template-columns:1fr}
+  .signature-link{justify-content:space-between}
+  .signature-gallery{grid-template-rows:235px 195px}
+  .signature-pastor-grid{grid-template-columns:92px 1fr;gap:18px}
+  .signature-pastor-image{width:92px}
+  .signature-pastor-image img{height:124px}
+  .signature-pastor-copy h2{font-size:clamp(1.85rem,8.5vw,2.3rem)}
+  .signature-pastor-copy>p:not(.eyebrow){font-size:.86rem}
+  .visit-welcome-image img{height:290px}
+  .visit-heart{min-height:320px}
+  .visit-ready-actions .btn{width:100%}
+  .pastor-duo article,.pastor-duo img{min-height:390px}
+}
