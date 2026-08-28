@@ -1511,3 +1511,53 @@ html,body{max-width:100%;overflow-x:hidden}
   .visit-ready-actions .btn{width:100%}
   .pastor-duo article,.pastor-duo img{min-height:390px}
 }
+
+/* ===== Swipeable mobile next-step cards ===== */
+@media(max-width:780px){
+  .journey-section{padding-bottom:50px;overflow:hidden}
+  .journey-heading{margin-bottom:22px}
+  .journey-stack{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0 16px 18px;
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    scroll-padding-left:16px;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .journey-stack::-webkit-scrollbar{display:none}
+  .journey-stack:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+  .journey-panel,.journey-panel:nth-child(2),.journey-panel:nth-child(3){
+    flex:0 0 min(82vw,330px);
+    width:min(82vw,330px);
+    min-height:0;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+  }
+  .journey-copy,.journey-panel-connect .journey-copy,.journey-panel-watch .journey-copy{padding:22px 19px 24px}
+  .journey-count{margin-bottom:22px;font-size:.61rem}
+  .journey-kicker{margin-bottom:8px}
+  .journey-panel h3{font-size:clamp(1.9rem,8.6vw,2.45rem)}
+  .journey-panel p{font-size:.88rem;line-height:1.48}
+  .journey-action{margin-top:18px;font-size:.8rem}
+  .journey-media{height:155px}
+  .journey-panel-visit .journey-copy{min-height:285px}
+  .journey-panel-connect .journey-copy{min-height:250px}
+  .journey-schedule{padding:0 19px 17px}
+  .journey-schedule p{padding:10px 0;font-size:.78rem}
+  .journey-schedule strong{font-size:.86rem}
+  .journey-panel-watch,.journey-panel-watch .journey-copy{min-height:440px}
+}
+
+@media(max-width:390px){
+  .journey-panel,.journey-panel:nth-child(2),.journey-panel:nth-child(3){
+    flex-basis:84vw;
+    width:84vw;
+  }
+}
