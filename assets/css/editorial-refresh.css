@@ -1,0 +1,16 @@
+/* HOB editorial refinement — isolated preview branch, November 2026 */
+:root{--hob-ink:#142844;--hob-cream:#f8f5ef;--hob-gold:#b99b69}
+.signature-home .signature-hero{min-height:min(840px,92svh);position:relative}
+.signature-home .signature-hero-photo{filter:saturate(.86) contrast(1.06)}
+.signature-home .signature-hero-overlay{background:linear-gradient(90deg,rgba(8,22,39,.88),rgba(8,22,39,.38) 58%,rgba(8,22,39,.06))}
+.signature-home .signature-hero-copy{max-width:760px}
+.signature-home .signature-hero-copy h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.055em;line-height:.96;font-size:clamp(4.5rem,9vw,9rem)}
+.signature-home .signature-hero-copy h1 em{font-weight:400}
+.signature-home .signature-hero-copy>p:not(.eyebrow){max-width:520px;line-height:1.8}
+.signature-home .signature-intro{background:var(--hob-cream)}
+.signature-home .signature-intro h2{letter-spacing:-.045em;line-height:1.02}
+.signature-home .signature-gallery img{filter:saturate(.9)}
+.signature-home .signature-pastor{background:var(--hob-ink)}
+.signature-home .signature-link{letter-spacing:.015em}
+@media(max-width:700px){.signature-home .signature-hero{min-height:750px;min-height:92svh}.signature-home .signature-hero-copy h1{font-size:clamp(4rem,16vw,6.2rem)}.signature-home .signature-hero-overlay{background:linear-gradient(90deg,rgba(8,22,39,.86),rgba(8,22,39,.43))}.signature-home .signature-hero-photo{object-position:55% center}}
+@media(prefers-reduced-motion:reduce){.signature-home *{scroll-behavior:auto!important}}
